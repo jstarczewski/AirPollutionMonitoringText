@@ -10,7 +10,7 @@ import com.jstarczewski.util.BaseView;
  * beda znajdowaly sie metody narzucajace funkcjonalnosc dla naszego
  * MainPresentera
  *
- * Analogicznei do View, tak samo narzuca one funkcjonalnosc dla MainView
+ * Analogicznie View, tak samo narzuca one funkcjonalnosc dla MainView
  *
  *
  * Podejscie to pozwala nam przemyslec jakich funkcjonalnosci ptrzebujemy

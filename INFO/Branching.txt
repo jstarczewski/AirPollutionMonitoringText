@@ -1,0 +1,6 @@
+Branczujemy nie -> DAMIANBRANCH itp. tylko przykladowo
+master
+	feature_data_display 
+Czyli branczujemy po funkcjonalnosci ktora budujemy. W masterze znajduje sie
+dzialajacy projekt. 
+Sadze ze bardziej zaawansowane rozgalezenie nie jest potrzebne

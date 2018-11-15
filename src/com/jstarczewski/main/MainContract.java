@@ -5,6 +5,7 @@ import com.jstarczewski.util.BaseView;
 
 
 /**
+ * @author Jan
  * Duzy interfejs zawierajacy dwa mniejsze, w srodku BasePresenter
  * beda znajdowaly sie metody narzucajace funkcjonalnosc dla naszego
  * MainPresentera

@@ -21,4 +21,6 @@ public interface BaseView<T> {
 
     void stop();
 
+    void printNullPointerExceptionError(String message);
+
 }

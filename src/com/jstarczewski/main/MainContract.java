@@ -34,11 +34,19 @@ public interface MainContract {
        void printInvalidCharacterInputError(String message);
 
        void printValidInputInfo(String message);
+
+
     }
 
     interface Presenter extends BasePresenter {
 
         void checkInput(String input);
+
+        void checkInstruction(String command);
+
+        void startGetPollutionProcedure();
+
+        void executeInstruction(String instruction);
 
     }
 

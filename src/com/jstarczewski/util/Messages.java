@@ -10,6 +10,7 @@ public class Messages {
 
         public static final String CONTAINS_VALID_CHARACTERS = " contains valid characters";
         public static final String CONTAINS_INVALID_CHARACTERS = " contains invalid characters";
+        public static final String IS_NULL = " is null";
 
     }
 

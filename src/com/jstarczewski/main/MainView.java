@@ -22,6 +22,11 @@ public class MainView implements MainContract.View {
     }
 
     @Override
+    public void printNullPointerExceptionError(String message) {
+        System.out.println(message);
+    }
+
+    @Override
     public void printInvalidCharacterInputError(String message) {
         System.out.println(message);
     }

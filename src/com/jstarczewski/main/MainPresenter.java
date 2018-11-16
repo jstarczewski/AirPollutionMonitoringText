@@ -17,6 +17,16 @@ public class MainPresenter implements MainContract.Presenter {
      * za pobieranie danych itp. sprawy
      */
 
+
+
+    /**
+     * @author Jan
+     * Zbyt duzo logiki w tej klasie, zaczyna mieć ona zbyt duza odpowiedzialność
+     * InputValidator bedzie signletonem wstrzykiwanym przy konstrukcji, zajmujacym sie
+     * sprwadzaniem inputu i dawaniem callback / return odnoscie sterowania
+     * */
+
+
     private MainContract.View mainView;
     private static final String NAME_REGEX = "[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]*";
     private final String[] input;

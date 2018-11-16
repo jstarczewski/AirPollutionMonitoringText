@@ -20,4 +20,14 @@ public class MainView implements MainContract.View {
     public void stop() {
 
     }
+
+    @Override
+    public void printInvalidCharacterInputError(String inputError) {
+        System.out.println(inputError);
+    }
+
+    @Override
+    public void printValidInputInfo() {
+        System.out.println("OK");
+    }
 }

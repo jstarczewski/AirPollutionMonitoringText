@@ -31,13 +31,14 @@ public interface MainContract {
 
     interface View extends BaseView<Presenter> {
 
+       void printInvalidCharacterInputError(String inputError);
 
-
+       void printValidInputInfo();
     }
 
     interface Presenter extends BasePresenter {
 
-
+        void checkInput(String input);
 
     }
 

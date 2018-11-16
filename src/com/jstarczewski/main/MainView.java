@@ -22,12 +22,12 @@ public class MainView implements MainContract.View {
     }
 
     @Override
-    public void printInvalidCharacterInputError(String inputError) {
-        System.out.println(inputError);
+    public void printInvalidCharacterInputError(String message) {
+        System.out.println(message);
     }
 
     @Override
-    public void printValidInputInfo() {
-        System.out.println("OK");
+    public void printValidInputInfo(String message) {
+        System.out.println(message);
     }
 }

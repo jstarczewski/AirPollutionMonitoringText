@@ -1,5 +1,7 @@
 package com.jstarczewski.main;
 
+import com.jstarczewski.util.Messages;
+
 public class MainPresenter implements MainContract.Presenter {
 
     /**
@@ -9,8 +11,7 @@ public class MainPresenter implements MainContract.Presenter {
      */
 
     private MainContract.View mainView;
-    private final String NAME_REGEX = "[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]*";
-
+    private static final String NAME_REGEX = "[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]*";
 
 
     public MainPresenter(MainContract.View mainView) {
@@ -31,9 +32,9 @@ public class MainPresenter implements MainContract.Presenter {
     @Override
     public void checkInput(String input) {
         if (isAlpha(input))
-            mainView.printValidInputInfo();
+            mainView.printValidInputInfo(input + Messages.Errors.CONTAINS_VALID_CHARACTERS);
         else
-            mainView.printInvalidCharacterInputError("Error");
+            mainView.printInvalidCharacterInputError(input + Messages.Errors.CONTAINS_INVALID_CHARACTERS);
     }
 
     private boolean isAlpha(String input) {

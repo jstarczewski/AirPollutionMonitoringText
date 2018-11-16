@@ -31,9 +31,9 @@ public interface MainContract {
 
     interface View extends BaseView<Presenter> {
 
-       void printInvalidCharacterInputError(String inputError);
+       void printInvalidCharacterInputError(String message);
 
-       void printValidInputInfo();
+       void printValidInputInfo(String message);
     }
 
     interface Presenter extends BasePresenter {

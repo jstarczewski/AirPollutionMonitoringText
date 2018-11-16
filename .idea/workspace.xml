@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2a64ae-540b-485f-9322-eacabb65941d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/jstarczewski/Main.java" afterPath="$PROJECT_DIR$/src/com/jstarczewski/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/com/jstarczewski/main/MainContract.java" afterPath="$PROJECT_DIR$/src/com/jstarczewski/main/MainContract.java" />
       <change beforePath="$PROJECT_DIR$/src/com/jstarczewski/main/MainPresenter.java" afterPath="$PROJECT_DIR$/src/com/jstarczewski/main/MainPresenter.java" />
       <change beforePath="$PROJECT_DIR$/src/com/jstarczewski/main/MainView.java" afterPath="$PROJECT_DIR$/src/com/jstarczewski/main/MainView.java" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/main/MainView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="450">
+              <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -31,8 +29,8 @@
       <file leaf-file-name="MainContract.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/main/MainContract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+            <state relative-caret-position="405">
+              <caret line="33" column="57" lean-forward="false" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -41,14 +39,24 @@
       <file leaf-file-name="MainPresenter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/main/MainPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+            <state relative-caret-position="510">
+              <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Messages.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/util/Messages.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -100,10 +108,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/jstarczewski/util/BasePresenter.java" />
         <option value="$PROJECT_DIR$/src/com/jstarczewski/util/BaseView.java" />
-        <option value="$PROJECT_DIR$/src/com/jstarczewski/main/MainContract.java" />
-        <option value="$PROJECT_DIR$/src/com/jstarczewski/main/MainPresenter.java" />
-        <option value="$PROJECT_DIR$/src/com/jstarczewski/main/MainView.java" />
         <option value="$PROJECT_DIR$/src/com/jstarczewski/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/jstarczewski/util/Errors.java" />
+        <option value="$PROJECT_DIR$/src/com/jstarczewski/main/MainContract.java" />
+        <option value="$PROJECT_DIR$/src/com/jstarczewski/main/MainView.java" />
+        <option value="$PROJECT_DIR$/src/com/jstarczewski/main/MainPresenter.java" />
+        <option value="$PROJECT_DIR$/src/com/jstarczewski/util/Messages.java" />
       </list>
     </option>
   </component>
@@ -265,12 +275,12 @@
       <option name="presentableId" value="Default" />
       <updated>1542276783252</updated>
       <workItem from="1542276787843" duration="2507000" />
-      <workItem from="1542370822341" duration="1102000" />
+      <workItem from="1542370822341" duration="1916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3609000" />
+    <option name="totallyTimeSpent" value="4423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -373,34 +383,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/main/MainView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/main/MainContract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="405">
+          <caret line="33" column="57" lean-forward="false" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/main/MainPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        <state relative-caret-position="510">
+          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jstarczewski/util/Messages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding />
         </state>
       </provider>

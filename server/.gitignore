@@ -125,7 +125,7 @@ venv.bak/
 
 # Gradle
 .idea/**/gradle.xml
-.idea
+django_rest_api/.idea
 migrations
 
 # Gradle and Maven with auto-import
@@ -150,6 +150,7 @@ out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
+.idea
 
 # JIRA plugin
 atlassian-ide-plugin.xml
@@ -166,3 +167,5 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+# Credentials
+django_rest_api/server_credentials.json

@@ -1,29 +1,29 @@
 #!/bin/bash
 
 NAME="hello_app"
-DJANGODIR=./django_rest_api/
-SOCKFILE=./gunicorn.sock
+DJANGODIR=~/Apps/AirPollutionMonitoring/server/django_rest_api/
+SOCKFILE=$DJANGODIR/../gunicorn.sock
 USER=ubuntu
 GROUP=webapps
 NUM_WORKERS=3
-DJANGO_SETTINGS_MODULE=hello.settings
-DJANGO_WSGI_MODULE=hello.wsgi
-PYTHONPATH=~/.virtualenvs/AirPollutionMonitoring/
+DJANGO_SETTINGS_MODULE=django_rest_api.settings
+DJANGO_WSGI_MODULE=django_rest_api.wsgi
+PYTHON_PATH=~/.virtualenvs/AirPollutionMonitoring
 
 echo "Starting $NAME as `whoami`"
 
 cd $DJANGODIR
 
 
-
-source $PYTHONPATH/bin/activate
-export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
-export PYTHONPATH=$PYTHONPATH
-
-exec $PYTHONPATH/bin/gunicorn $DJANGO_WSGI_MODULE:application \
+source $PYTHON_PATH/bin/activate
+export PYTHONPATH=$PYTHON_PATH/bin/python3
+echo "XD"
+echo "$PYTHON_PATH/bin/gunicorn ${DJANGO_WSGI_MODULE}:application"
+exec $PYTHON_PATH/bin/gunicorn $DJANGO_WSGI_MODULE \
     --name $NAME \
     --workers $NUM_WORKERS \
     --user=$USER --group=$GROUP \
     --bind=unix:$SOCKFILE \
     --log-level=debug \
-    --log-file=gunicorn_log
+
+echo "DONE"

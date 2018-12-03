@@ -11,21 +11,25 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-
+import json
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+CONFIG_PATH = os.path.join(BASE_DIR, "server_credentials.json")
+
+with open(CONFIG_PATH, 'r') as f:
+    CONFIG = json.load(f)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'td!=z8sf*-1p5--6=e2h$0(6#2m6*%@@-(gw9-80-=ne)dy34q'
+SECRET_KEY = CONFIG["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = CONFIG["ALLOWED_HOSTS"]
 
 
 # Application definition
@@ -74,16 +78,7 @@ WSGI_APPLICATION = 'django_rest_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'air_pollution_monitoring_db',
-        'USER': 'api',
-        'PASSWORD': 'air_pollution_api',
-        'HOST': '18.206.117.20',
-        'PORT': '5432'
-    }
-}
+DATABASES = CONFIG["DATABASES"]
 
 
 # Password validation

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME="hello_app"
+NAME="django_rest_api"
 DJANGODIR=~/Apps/AirPollutionMonitoring/server/django_rest_api/
 SOCKFILE=$DJANGODIR/../gunicorn.sock
 USER=ubuntu
@@ -10,14 +10,13 @@ DJANGO_SETTINGS_MODULE=django_rest_api.settings
 DJANGO_WSGI_MODULE=django_rest_api.wsgi
 PYTHON_PATH=~/.virtualenvs/AirPollutionMonitoring
 
-echo "Starting $NAME as `whoami`"
+echo "Starting $NAME as `whoami`."
 
 cd $DJANGODIR
 
 
 source $PYTHON_PATH/bin/activate
 export PYTHONPATH=$PYTHON_PATH/bin/python3
-echo "XD"
 echo "$PYTHON_PATH/bin/gunicorn ${DJANGO_WSGI_MODULE}:application"
 exec $PYTHON_PATH/bin/gunicorn $DJANGO_WSGI_MODULE \
     --name $NAME \
@@ -26,4 +25,4 @@ exec $PYTHON_PATH/bin/gunicorn $DJANGO_WSGI_MODULE \
     --bind=unix:$SOCKFILE \
     --log-level=debug \
 
-echo "DONE"
+echo "$NAME started succesfully."

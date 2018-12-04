@@ -17,9 +17,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 CONFIG_PATH = os.path.join(BASE_DIR, "server_credentials.json")
 
+DEBUG = True
+
 with open(CONFIG_PATH, 'r') as f:
     CONFIG = json.load(f)
 
+CONFIG = CONFIG[str(DEBUG)]
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -27,7 +30,6 @@ with open(CONFIG_PATH, 'r') as f:
 SECRET_KEY = CONFIG["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 ALLOWED_HOSTS = CONFIG["ALLOWED_HOSTS"]
 
